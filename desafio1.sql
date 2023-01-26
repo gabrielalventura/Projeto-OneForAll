@@ -5,7 +5,7 @@ DROP DATABASE IF EXISTS SpotifyClone;
   CREATE TABLE SpotifyClone.plans(
       plan_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
       plan VARCHAR(100) NOT NULL,
-      price DECIMAL(5, 2) NOT NULL,
+      price DECIMAL(5, 2) NOT NULL
   ) ENGINE = InnoDB;
 
   CREATE TABLE SpotifyClone.profiles(
@@ -19,7 +19,7 @@ DROP DATABASE IF EXISTS SpotifyClone;
 
    CREATE TABLE SpotifyClone.artist_profile(
       artist_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-      artist VARCHAR(300) NOT NULL,
+      artist VARCHAR(300) NOT NULL
   ) ENGINE = InnoDB;
 
    CREATE TABLE SpotifyClone.record_album(
@@ -112,14 +112,17 @@ DROP DATABASE IF EXISTS SpotifyClone;
   VALUES
     (1, 1),
     (1, 2),
+    (1, 6),
     (2, 1),
     (2, 3),
+    (2, 10),
     (3, 1),
     (3, 2),
     (3, 9),
     (4, 4),
     (5, 5),
     (6, 5),
+    (6, 6),
     (6, 7);
 
       INSERT INTO SpotifyClone.reproduction_history (profile_id, song_id, history_inf)
